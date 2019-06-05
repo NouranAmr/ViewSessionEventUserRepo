@@ -1,19 +1,19 @@
 <resources>
     <string name="app_name">ViewSessionEventUser</string>
-    <string name="ViewSession">View Session</string>
-    <string name="sessionName">Session Name</string>
+    <string name="viewSession">View session</string>
+    <string name="sessionName">Session name</string>
     <string name="name">Name</string>
-    <string name="shortDesc">Short Description</string>
-    <string name="longDesc">Long Description</string>
-    <string name="startDate">Start Date</string>
-    <string name="endDate">End Date</string>
-    <string name="sessionType">SessionType</string>
+    <string name="shortDesc">Short description</string>
+    <string name="longDesc">Long description</string>
+    <string name="startDate">Start date</string>
+    <string name="endDate">End date</string>
+    <string name="sessionType">Session type</string>
     <string name="sessionCapacity">Capacity</string>
     <string name="sessionInstructor">Instructor</string>
     <string name="sessionSpeaker">Speaker</string>
-    <string name="updateSession">Update Session</string>
+    <string name="updateSession">Update session</string>
     <string name="increment">+</string>
     <string name="decrement">-</string>
     <string name="display">1</string>
-    <string name="sessionNameText">session name.....</string>
+    <string name="sessionNameText">Session name....</string>
 </resources>

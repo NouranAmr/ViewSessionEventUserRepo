@@ -12,20 +12,20 @@
         android:layout_height="wrap_content"
         tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/viewSessionTitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:layout_marginStart="130dp"
-        android:layout_marginTop="3dp"
-        android:layout_marginEnd="130dp"
-        android:text="@string/ViewSession"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/viewSessionTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="130dp"
+            android:text="@string/viewSession"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/sessionNameTextView"
@@ -33,7 +33,6 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="112dp"
             android:layout_marginTop="32dp"
-            android:background="@drawable/rounded_corner"
             android:text="@string/sessionNameText"
             android:textColorLink="@color/colorPrimaryDark"
 
@@ -42,29 +41,30 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/viewSessionTitle" />
 
-    <TextView
-        android:id="@+id/shortDescriptionLabel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="20dp"
-        android:text="@string/shortDesc"
-        android:textColorLink="@color/colorPrimaryDark"
-        android:textSize="21sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/sessionNameTextView" />
+        <TextView
+            android:id="@+id/shortDescriptionLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/shortDesc"
+            android:textColorLink="@color/colorPrimaryDark"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sessionNameTextView" />
 
-    <EditText
-        android:id="@+id/shortDescriptionTextView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text=""
-        android:background="@drawable/rounded_corner"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/shortDescriptionLabel"
-        />
+        <EditText
+            android:id="@+id/shortDescriptionTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_corner"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/shortDescriptionLabel"
+            />
         <TextView
             android:id="@+id/longDescriptionLabel"
             android:layout_width="wrap_content"
@@ -77,70 +77,62 @@
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/shortDescriptionTextView" />
-    <EditText
-        android:id="@+id/longDescriptionTextView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/rounded_corner"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/longDescriptionLabel" />
-
-        <LinearLayout
-            android:id="@+id/dateLinearLayout"
-            android:weightSum="6"
-
+        <EditText
+            android:id="@+id/longDescriptionTextView"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="16dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_corner"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/longDescriptionTextView">
-
-            <ImageButton
-                android:id="@+id/startDateBtn"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="78dp"
-                android:layout_marginTop="24dp"
-                android:layout_marginBottom="12dp"
-                android:layout_weight="1"
-                android:background="@drawable/ic_calendar"
-                android:scaleType="fitCenter"
-                app:layout_constraintHorizontal_bias="0.22"
-                app:layout_constraintLeft_toLeftOf="parent" />
+            app:layout_constraintTop_toBottomOf="@+id/longDescriptionLabel" />
 
 
-            <ImageButton
-                android:id="@+id/endDateBtn"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="100dp"
-                android:layout_marginLeft="200dp"
-                android:layout_marginTop="24dp"
-                android:layout_weight="1"
-                android:background="@drawable/ic_calendar"
-                app:layout_constraintRight_toRightOf="parent" />
-        </LinearLayout>
+        <ImageButton
+            android:id="@+id/startDateBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="76dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="129dp"
+            android:background="@drawable/ic_calendar"
+            app:layout_constraintEnd_toStartOf="@+id/endDateBtn"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/longDescriptionTextView" />
+
+
+        <ImageButton
+            android:id="@+id/endDateBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="79dp"
+            android:background="@drawable/ic_calendar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/longDescriptionTextView" />
 
         <TextView
             android:id="@+id/startDateTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
-            android:layout_marginEnd="81dp"
+            android:layout_marginStart="76dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="138dp"
             android:text="@string/startDate"
             app:layout_constraintEnd_toStartOf="@+id/endDateTextView"
-            app:layout_constraintTop_toBottomOf="@+id/dateLinearLayout" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/startDateBtn" />
 
         <TextView
             android:id="@+id/endDateTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
-            android:layout_marginEnd="136dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="80dp"
             android:text="@string/endDate"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/dateLinearLayout" />
+            app:layout_constraintTop_toBottomOf="@+id/endDateBtn" />
         <TextView
             android:id="@+id/sessionTypeLabel"
             android:layout_width="wrap_content"
@@ -158,7 +150,7 @@
             android:id="@+id/sessionTypeSpinner"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="32dp"
+            android:layout_marginStart="8dp"
             android:layout_marginTop="20dp"
             app:layout_constraintStart_toEndOf="@+id/sessionTypeLabel"
             app:layout_constraintTop_toBottomOf="@+id/endDateTextView" />
@@ -188,7 +180,6 @@
             android:ems="10"
             android:inputType="number"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.759"
             app:layout_constraintStart_toEndOf="@+id/sessionCapacityLabel"
             app:layout_constraintTop_toBottomOf="@+id/sessionTypeSpinner" />
 
@@ -210,6 +201,8 @@
             android:id="@+id/sessionInstructorEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
             android:layout_marginTop="12dp"
             android:background="@drawable/rounded_corner"
             app:layout_constraintStart_toStartOf="parent"
@@ -233,6 +226,8 @@
             android:id="@+id/speakerSessionEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
             android:layout_marginTop="12dp"
             android:background="@drawable/rounded_corner"
             app:layout_constraintStart_toStartOf="parent"
